@@ -3,7 +3,7 @@ package builder;
 import product.House;
 
 /**
- * This interface class defines all of the construction steps to build a House.
+ * This interface defines all of the construction steps to build a House.
  * The steps are common to all types of House.
  * Each step is generally abstract as the actual functionality of the builder is carried out in the concrete subclasses.
  * The getHouse method is used to return the final House product.

@@ -4,7 +4,7 @@ import concretebuilder.CountryHouseBuilder;
 import builder.IHouseBuilder;
 import concretebuilder.PentHouseBuilder;
 import director.Director;
-import product.House;
+import product.IHouse;
 
 /**
  * This class provides Client code to have a house built.
@@ -21,7 +21,7 @@ public class Client {
 
         director.buildHouse();
 
-        House house = director.getHouse();
+        IHouse house = director.getHouse();
 
         System.out.println("The house has been built, with these features:");
         System.out.println("\t- Structure: " + house.getStructure());

@@ -2,6 +2,7 @@ package concretebuilder;
 
 import builder.IHouseBuilder;
 import product.House;
+import product.IHouse;
 
 /**
  * This class provides implementations to build a Penthouse.
@@ -9,7 +10,7 @@ import product.House;
  * @Author NGUYEN HOANG NAM ANH
  */
 public class PentHouseBuilder implements IHouseBuilder {
-    private House house;
+    private IHouse house;
     public PentHouseBuilder(){ this.house = new House(); }
 
     public void buildStructure() {
@@ -52,7 +53,7 @@ public class PentHouseBuilder implements IHouseBuilder {
         this.house.setHasSwimmingPool(true);
     }
 
-    public House getHouse() {
+    public IHouse getHouse() {
         return house;
     }
 }

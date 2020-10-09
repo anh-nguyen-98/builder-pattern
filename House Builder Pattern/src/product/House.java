@@ -5,7 +5,7 @@ package product;
  *
  * @Author NGUYEN HOANG NAM ANH
  */
-public class House {
+public class House implements IHouse{
 
     private String structure;
     private String roof;

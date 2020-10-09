@@ -1,6 +1,6 @@
 package builder;
 
-import product.House;
+import product.IHouse;
 
 /**
  * This interface class defines all of the construction steps to build a House.
@@ -12,27 +12,27 @@ import product.House;
  */
 public interface IHouseBuilder {
 
-    public void buildStructure();
+    void buildStructure();
 
-    public void buildRoof();
+    void buildRoof();
 
-    public void buildFloor();
+    void buildFloor();
 
-    public void buildColor();
+    void buildColor();
 
-    public void buildWindows();
+    void buildWindows();
 
-    public void buildBathroom();
+    void buildBathroom();
 
-    public void buildBedroom();
-
-
-    public void buildLivingroom();
+    void buildBedroom();
 
 
-    public void buildGarden();
+    void buildLivingroom();
 
-    public void buildSwimmingPool();
 
-    public House getHouse();
+    void buildGarden();
+
+    void buildSwimmingPool();
+
+    IHouse getHouse();
 }

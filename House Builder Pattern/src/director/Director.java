@@ -1,7 +1,7 @@
 package director;
 
 import builder.IHouseBuilder;
-import product.House;
+import product.IHouse;
 
 /**
  * This class provides instructions to generate House, the final product object.
@@ -30,7 +30,7 @@ public class Director {
         this.houseBuilder.buildSwimmingPool();
     }
 
-    public House getHouse(){
+    public IHouse getHouse(){
         return this.houseBuilder.getHouse();
 
     }

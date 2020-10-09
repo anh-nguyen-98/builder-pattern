@@ -2,6 +2,7 @@ package concretebuilder;
 
 import builder.IHouseBuilder;
 import product.House;
+import product.IHouse;
 
 /**
  * This class provides implementations to build a Country House.
@@ -9,7 +10,7 @@ import product.House;
  * @Author NGUYEN HOANG NAM ANH
  */
 public class CountryHouseBuilder implements IHouseBuilder {
-    private House house;
+    private IHouse house;
 
     public CountryHouseBuilder() { this.house = new House(); }
     public void buildStructure() {
@@ -59,7 +60,7 @@ public class CountryHouseBuilder implements IHouseBuilder {
         this.house.setHasSwimmingPool(false);
     }
 
-    public  House getHouse(){
+    public  IHouse getHouse(){
         return this.house;
     }
 
